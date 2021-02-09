@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> <!--divbox <h1>-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Imbue:wght@600&display=swap" rel="stylesheet"> <!--divbox <p>-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--article & aside-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            height: 100px;
+            width: 100%;
+           background-image: linear-gradient(to right,black,rgb(78, 70, 70));
+        }
+        .logospan{
+            background-color: white;
+            width: 25%;
+            height: 100%;
+            float: right;
+            text-align: center;
+        }
+        #h1title{
+            float: left;
+            line-height: 100px;
+            padding: 0 15px;
+            font-family: 'Patua One', cursive;
+        }
+        .logoimg{
+            height: 100%;
+            border-radius: 50%;
+        }
+        nav{
+            width: 70%;
+            text-align: center;
+            
+
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+            display: inline-block;
+
+        }
+        nav a:hover{
+        background-color: white;
+        color: black;
+        height: 100%;
+        width: 100%;
+        }
+        nav li{
+            display: inline-block;
+            line-height: 100px;
+            width: 110px;
+            text-align: center;
+            margin: 0 5px;
+        }
+        main{
+            width: 100%;
+            height: 1200px;
+            background-image: linear-gradient(to right,black,rgb(54, 50, 50));
+            border-top:solid 3px white ;
+            animation-name: change_color;
+            animation-duration: 3s;
+        }
+        .articleMain{
+            width: 70%;      
+            height: 1000px;      
+            float: right;
+            position: relative;   
+        }
+         .divBox{
+            position: absolute;    
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%,-50%);  
+            width: 400px;
+            height: 180px;
+            background-color: white;
+            text-align: center;
+            padding: 20px; 
+        }
+        .divBox h1{
+            border-bottom: solid red 3px;
+            padding: 20px;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .divBox p{
+            font-family: 'Bebas Neue', cursive;
+        }
+        @keyframes change_color{
+            0%{
+                background-color: white;
+            }
+            50%{
+                background-color: rgb(238, 73, 73);
+            }
+            90%{
+                
+            }
+            100%{
+                background-color:  rgb(36, 33, 33);
+            }
+        }
+        @media only screen and (min-width: 940px) and (max-width: 1070px){
+            .logospan{
+                width: 35%;
+            }
+            .articleMain{
+                width: 65%;
+                
+            }
+            aside{
+                width: 35%;
+
+            }
+        }
+        @media only screen and (max-width: 940px) {
+            .logospan{
+                width: 40%;
+            }
+        }
+        @media only screen and (max-width: 641px){
+            header, main{
+                height: auto;
+            }
+            .logospan{
+                width: 100%;
+            }
+            #h1title,.logoimg{
+                float: none;
+            }
+            nav{
+                width: 100%;
+            }
+            .aside{
+                width: 100%;
+            }
+            .articleMain{
+                height: 250px;
+                width: 100%;
+                background-color:rgb(255, 255, 255);
+            }
+        }
+        @media only screen and (max-width: 500px){    
+            nav li{
+                display: block;
+                width: 100%;
+            }
+        }
+        #print{
+            display: none;
+        }
+        @media print{
+            .aside{
+                display: none;
+            }
+            #print{
+                display: block;
+            }
+
+        }
+        @media only screen and(max-width: 500px) {
+            aside .h1_aside{
+                width:20% ;
+            }
+        }
+        @media screen and (max-width: 1070px){
+            .art2 img a{
+                height: auto;
+                width: 50%;
+            }
+            .h1_art2{
+                height: auto;
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 752px){
+            .art2 img a{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 857px){
+            .h1_art2{
+                font-size: 50px;
+            }
+            @media screen and (max-width: 700px){
+                .h1_art2{
+                    width: 100%;
+                }
+            }
+        }
+        @media screen and (max-width: 1000px){
+                main .h1_art2{
+                    left: 4%;
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 500px){
+                main .img1 , main ,.img2{
+                    height: auto;
+                }
+            }
+            @media screen and (max-width: 642px){
+                .divBox{
+                    width: 200px;
+                    font-size: 10px;
+                }
+                .divBox p{
+                    font-size: 10px;
+                }
+                article .art2{
+                    height: auto;
+                    width: 100%;
+                    position: absolute;
+                    top: 400%;
+                }
+                article .h1_art2{
+                    position: absolute;
+                    top: 380%;
+                }
+               article .divBox{
+
+                   font-size: 16px;
+                }
+                article .div_icon{
+                    position: absolute;
+                    bottom: 250%;
+                }
+                article .h1_social{
+                    position: absolute;
+                    top: 50%;
+                    font-size: 20px;
+                }
+            }
+            @media screen and (max-width: 641){
+
+            }
+            @media screen and (max-width: 800px){
+                .divBox{
+                    width: 340px;
+                    font-size: 13px;
+                }
+            }
+            @media screen and (max-width: 1200px){
+                article .h1_social{
+                    font-size: 25px;
+                }
+            }
+            @media screen and (max-width: 1071px){
+                article .h1_social{
+                    font-size: 20px;
+                }
+                article .h1_art2{
+                    font-size: 30px;
+                }
+            }
+            @media screen and (max-width: 800px){
+                article .h1_art2{
+                    font-size: 25px;
+                }
+                article .h1_social{
+                    position: absolute;
+                    left: 34%;
+                }
+            }
+
+            @media screen and (max-width: 600px){
+                main{
+                    height: 1300px;
+                }
+            }
+
+            @media screen and (max-width: 641){
+                main{
+                    height: 100%;
+                }
+            }
+            @media screen and (max-width: 642px){
+                article .h1_art2{
+                    position: initial;
+                    text-align: center;
+                    position: absolute;
+                    top: 55%;
+                    font-size: 30px;
+                }
+                article .art2{
+                    position: initial;
+                    width: 210px;
+                    text-align: center;
+                    position: absolute;
+                    top: 60%;
+                    bottom: 100%;
+                    display: inline;
+
+                }
+                article .art2 .img2{
+                    position: absolute;
+                   left: 115%;
+                }
+            }
+            @media screen and (max-width: 641px){
+                main{
+                    height: 1300px;
+                }
+                article .art2{
+                   display: block;
+                }
+                .art2{
+                    text-align: center;;
+        
+                }
+                 .art2 .img1, .art2 .img2{
+                   float: none;
+                    width: 80%;
+                }
+                 article .h1_art2{
+                   text-align: center;
+                }
+                 article .h1_art2{
+                    font-size: 35px;
+                }
+                article .art2{
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 380%
+                }
+                article .art2 .img2{
+                    display: block;
+                    position: absolute;
+                    right: 55%;
+                    left: 7.5%;
+
+                }
+                article .h1_art2{
+                    display: block;
+                    position: absolute;
+                    top: 360%;
+                }
+                article .divBox{
+                    top: 50%;
+                    padding: 10px;
+                }
+            }
+            @media screen and (max-width: 580px){
+                main{
+                    height: 1250px;
+                }
+            }
+            @media screen and (max-width: 500px){
+                main{
+                    height: 1200px;
+                }
+            }
+            @media screen and (max-width: 520px){
+                main{
+                    height: 1190px;
+                }
+            }
+            @media screen and (max-width: 545px){
+                main{
+                    height: 1220px;
+                }
+            }
+            @media screen and (max-width: 500px){
+                main{
+                    height: 1200px;
+                }
+            }
+            @media screen and (max-width: 400px){
+                main{
+                    height: 1100px;
+                }
+            }
+
+
+
+        aside{
+            width: 30%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            float: left;
+        }
+        aside img{
+            width: 80%;
+
+        }
+        .h1_aside{
+            position: relative;
+            left: 13%;
+            height: 30px;
+            width: 70%;
+            padding: 10px;
+            border-bottom:solid 3px red ;
+            color:black;
+        }
+         .div_icon{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            
+        } 
+        .div_icon img{
+        width: 45px;
+        padding: 0 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        border-bottom:red 3px solid ;
+        }
+        .div_icon img:hover{
+            width: 55px;
+            border: none;
+        }
+        .h1_social{
+            padding:10px ;
+            text-align: center;
+            color: red;
+            font-size: 30px;
+            position: absolute;
+            top: 35%;
+            left: 37%;
+        }
+        .h1_aside , .h1_social{
+            font-family: 'Bebas Neue', cursive;
+        }
+        .art2{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 60%;
+        }
+        .h1_art2{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+            text-align: center;
+            color: red;
+            display: block;
+            position: absolute;
+            top: 55%;
+            left: 42%;
+        }
+        .art2 img {
+            width: 85%;
+            margin: 15px;
+            justify-content: center;
+        }
+        .art2 .img1 {
+            float: none;
+            
+        }
+        main .img2 {
+            float: left;
+
+        }
+        #articlemain{
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="logospan">
+            <img class="logoimg" src="data:image/jpeg;base64,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" alt="">
+            <h1 id="h1title">Baro 55</h1>
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCwi36QnjSszUL1_zc_dY96g">Home Page</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCwi36QnjSszUL1_zc_dY96g/videos">Videos</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/?hl=ar&gl=IQ">Channel</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="articleMain">
+            
+            
+
+            <div class="divBox">
+                <h1 class="h1_div"> Hello, I am Baro I am a content creator for YouTube </h1>
+                <br>
+                <p class="p_family" style="font-size: 25px;"> 8k+ on youtube</p>
+                <h1 id="print"></h1>
+            </div>
+            <h1 class="h1_art2">Most popular</h1>
+            <article class="art2">
+                
+                <a href="https://www.youtube.com/watch?v=y6GCSanmMcM&t=0s"><img class="img1" src="img/one.jpg" alt="" ></a>
+                <a href="https://www.youtube.com/watch?v=vYVDbOoeBLg"><img class="img2" src="img/three.jpg" alt="" ></a>
+                
+                
+            </article>
+        </article>
+        <aside class="aside">
+            <a href="https://www.youtube.com/watch?v=lkA4obXt8zM&t=0s"><img src="img/LBTN.JPEG" ></a>
+            <h1 class="h1_aside">Last Videos</h1>
+            <br>
+            <a href="https://www.youtube.com/watch?v=HjW4qwRBJ0o&t=0s"><img src="img/OJEI2681.JPEG" /></a>
+
+        </aside>
+        <article class="articleMain" id="articlemain">
+            
+            
+            <h1 class="h1_social">Social Media Accounts</h1>
+            <div class="div_icon">
+                <a href="https://www.instagram.com/baro55_/"><img src="img/instagram.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCwi36QnjSszUL1_zc_dY96g"><img src="img/youtube.png" ></a>
+                <a href="https://twitter.com/baro55_"><img src="img/twitterr.png" alt=""></a>
+            </div>
+            </article>
+
+    </main>
+
+</body>
+</html>
